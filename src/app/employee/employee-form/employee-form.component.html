@@ -1,0 +1,25 @@
+<form class="row" [formGroup]="service.employeeForm" (submit)="onSubmit()" [class.submitted]="submitted">
+    <div class="col-md-12 mb-3">
+        <label for="fullname" class="form-label">Full Name</label>
+        <input name="fullname" class="form-control form-control-lg" id="fullname" placeholder="Enter your full name"
+            formControlName="fullName" />
+    </div>
+    <div class="col-md-12 mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input name="location" class="form-control form-control-lg" id="location" placeholder="Enter your location"
+            formControlName="location" />
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="position" class="form-label">Position</label>
+        <input name="position" class="form-control form-control-lg" id="position" placeholder="Enter your position"
+            formControlName="position" />
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="salary" class="form-label">Salary</label>
+        <input name="salary" class="form-control form-control-lg" id="salary" placeholder="Enter your salary"
+            formControlName="salary" type="number" />
+    </div>
+    <div class="col-md-12 d-grid">
+        <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+    </div>
+</form>
